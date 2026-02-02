@@ -1,1 +1,1 @@
-mypath = '/Users/neurvanna/Documents/Lebedeva_2026/data/opto';
+mypath = '/Users/neurvanna/Documents/Lebedeva_2026/data/figure67';

@@ -1,16 +1,26 @@
 %% Parameters
 before_switch = 10;
 whichLength   = 50;
-region        = 'MOs';
+region        = 'mPFC';
 nFake         = 100;
 
 
-if strcmp(region, 'MOs')
-    miceAll = {'AL063MOs', 'AL064MOs', 'AL065MOs', 'AL081MOs', 'AL083MOs', 'AL084MOs'}; % MOs mice
-elseif strcmp(region, 'mPFC')
-    miceAll = {'AL070mPFC', 'AL071mPFC', 'AL072mPFC', 'AL076mPFC', 'AL077mPFC', 'AL082mPFC', 'AL087mPFC'}; % mPFC mice
-end
+loadPath_opto;
+baseDir = fullfile(mypath, '/halfSession/');
+mouseDirs = dir(baseDir);
+mouseDirs = mouseDirs([mouseDirs.isdir]);
+mouseDirs = mouseDirs(~ismember({mouseDirs.name},{'.','..'}));
 
+switch region
+    case 'MOs'
+        miceAll = {mouseDirs(contains({mouseDirs.name}, 'MOs')).name};
+
+    case 'mPFC'
+        miceAll = {mouseDirs(contains({mouseDirs.name}, 'mPFC')).name};
+
+    otherwise
+        error('Unknown region: %s', region);
+end
 x = -before_switch:whichLength;
 
 %% Containers (real)
@@ -31,7 +41,7 @@ for iMouse = 1:length(miceAll)
     correctAll = mousedata.correct;
     laserAll   = mousedata.laser_fb_all;
     datesAll   = mousedata.dates;
-    responsesAll = mousedata.choices*2-1;
+    responsesAll = mousedata.choices;
     
     uniqueDates = unique(datesAll);
     

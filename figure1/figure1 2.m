@@ -1,5 +1,5 @@
 loadPath_ephys;
-baseDir = fullfile(mypath);
+baseDir = fullfile(mypath, 'individual_dates_data');
 
 d = dir(baseDir);
 d = d([d.isdir]);
