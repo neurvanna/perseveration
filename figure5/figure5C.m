@@ -3,7 +3,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Projection-based regression analysis
-% Logic matched exactly to user's implementation
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear; close all;
@@ -99,7 +98,7 @@ title('Projection regression (fixation period)');
 box off;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ---------------- FUNCTION (LOGIC-MATCHED) ---
+% ---------------- HELPER FUNCTION  ---
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 function mse_mean = run_projection_match(processedData, predictionMatrix, ...
