@@ -2,7 +2,7 @@
 
 In order to run the code, please download the data from here:     
 
-This folder contains data in three folders: figure1 (behaviour only), figure 245 (behavioural and ephys data), figure 67 (optogenetics data), as well as helper functions to load the data.    
+This folder contains data in three folders: figure1 (behaviour only), figure 245 (behavioural and ephys data), figure 67 (optogenetics data).    
 
 Within each of the three folders, you will find a folder for each mouse and within that you will find a folder for each date.    
 
