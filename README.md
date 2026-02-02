@@ -1,10 +1,15 @@
 # Code for Dorsal prefrontal cortex drives perseverative behavior in mice, Lebedeva et al.
 
-In order to run the code, please download the data from here: 
-This folder contains data in three folders: figure1 (behaviour only), figure 245 (behavioural and ephys data), figure 67 (optogenetics data), as well as helper functions to load the data. 
-Within each of the three folders, you will find a folder for each mouse and within that you will find a folder for each date. 
-Inside, there are some (depending on the experiment) of the following files: 
-Trials.choices.npy (-1 for left, 1 for right wheel turn)
+In order to run the code, please download the data from here:     
+
+This folder contains data in three folders: figure1 (behaviour only), figure 245 (behavioural and ephys data), figure 67 (optogenetics data), as well as helper functions to load the data.    
+
+Within each of the three folders, you will find a folder for each mouse and within that you will find a folder for each date.    
+
+Inside, there are some (depending on the experiment) of the following files:    
+
+Trials.choices.npy (-1 for left, 1 for right wheel turn)   
+
 Trials.correctAnswers.npy (-1 for left, 1 for right wheel turn)
 Trials.feedback.npy  (0 for white noise, 1 for liquid reward)
 Trials.goCueTimes.npy (in seconds) 
