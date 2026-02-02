@@ -36,13 +36,7 @@ for iM = 1:nMice
     mouse = miceAll{iM};
 
     mousedata = reconstructMousedataFromTrials(mouse);
-    % % ---- Load data ----
-    % if strcmp(region, 'MOs')
-    %     filename = ['mousedata_random_' mouse 'MOs.mat'];
-    % elseif strcmp(region, 'mPFC')
-    %     filename = ['mousedata_random_' mouse 'mPFC.mat'];
-    % end
-    % load(filename, 'mousedata');
+
 
     laser_beep = mousedata.laser_beep_all(:);
     laser_fb   = mousedata.laser_fb_all(:);
@@ -181,12 +175,7 @@ for iM = 1:nMice
     mouse = miceAll{iM};
 
     mousedata = reconstructMousedataFromTrials(mouse);
-    % if strcmp(region, 'MOs')
-    %     filename = ['mousedata_random_' mouse 'MOs.mat'];
-    % elseif strcmp(region, 'mPFC')
-    %     filename = ['mousedata_random_' mouse 'mPFC.mat'];
-    % end
-    % load(filename, 'mousedata');
+
 
     laser_beep = mousedata.laser_beep_all(:);
     beep_t     = mousedata.beep_all_t(:);
