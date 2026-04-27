@@ -1,4 +1,4 @@
-# Code for Dorsal prefrontal cortex drives perseverative behavior in mice, Lebedeva et al.
+# Code for Dorsal prefrontal cortex drives perseverative behavior in mice, Lebedeva et al., 2026
 
 In order to run the code, please download the data from here: https://doi.org/10.6084/m9.figshare.31231741  
 
