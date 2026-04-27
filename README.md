@@ -29,7 +29,7 @@ spikes.clusters.npy (cluster ID for every spike; only non-noise clusters)
 
 clusters.brain_location_ccf_2017.txt (name of brain region for every cluster; ordered by cluster index, not cluster ID)  
 
-trials. &times; .npy files are size (1, nTrials)  ; spikes. $ \times $ .npy are size (nSpikes,1) ; clusters. $ \times $ .npy are size (nClusters,1).  
+trials. \* .npy files are size (1, nTrials)  ; spikes. $ \times $ .npy are size (nSpikes,1) ; clusters. $ \times $ .npy are size (nClusters,1).  
 
 
 
