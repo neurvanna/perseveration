@@ -64,13 +64,13 @@ for a = 1:numel(animalDirs)
         %% Load alignment times
         switch timebin
             case 'goCue'
-                S = load(fullfile(expPath,'Trials.goCueTimes.mat'));
+                S = load(fullfile(expPath,'trials.go_cue_times.mat'));
                 alignTimes = S.goCueTimes;
             case 'fb'
-                S = load(fullfile(expPath,'Trials.feedbackTimes.mat'));
+                S = load(fullfile(expPath,'trials.feedback_times.mat'));
                 alignTimes = S.feedbackTimes;
             case 'mov'
-                S = load(fullfile(expPath,'Trials.movementTimes.mat'));
+                S = load(fullfile(expPath,'trials.movement_times.mat'));
                 alignTimes = S.movementTimes;
         end
 
@@ -84,7 +84,7 @@ for a = 1:numel(animalDirs)
 
         if ~strcmp(brainRegion,'any')
             % ---- LOAD unit_area FROM TEXT FILE ----
-            txtFile = fullfile(expPath,'Clusters.brainLocation_ccf_2017.txt');
+            txtFile = fullfile(expPath,'clusters.brain_location_ccf_2017.txt');
             if ~exist(txtFile, 'file')
                 warning('Missing brain region file: %s', txtFile);
                 continue
