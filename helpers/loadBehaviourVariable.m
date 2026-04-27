@@ -37,17 +37,17 @@ for a = 1:numel(animalDirs)
         % Determine file name
         switch varName
             case 'choice'
-                matFile = fullfile(expPath,'Trials.choices.mat');
+                matFile = fullfile(expPath,'trials.choices.mat');
             case 'P'
-                matFile = fullfile(expPath,'Trials.P.mat');
+                matFile = fullfile(expPath,'trials.P.mat');
             case 'feedback'
-                matFile = fullfile(expPath,'Trials.feedback.mat');
+                matFile = fullfile(expPath,'trials.feedback.mat');
             case 'feedbackTimes'
-                matFile = fullfile(expPath,'Trials.feedbackTimes.mat');
+                matFile = fullfile(expPath,'trials.feedback_times.mat');
             case 'movementTimes'
-                matFile = fullfile(expPath,'Trials.movementTimes.mat');
+                matFile = fullfile(expPath,'trials.movement_times.mat');
             case 'goCueTimes'
-                matFile = fullfile(expPath,'Trials.goCueTimes.mat');
+                matFile = fullfile(expPath,'trials.go_cue_times.mat');
         end
 
         if ~exist(matFile, 'file')
