@@ -58,7 +58,7 @@ for a = 1:numel(animalDirs)
 
         %% Load spikes
         st = readNPY(spikeTimesFile);
-        st = double(st)./30000;  % convert to seconds
+        st = double(st);  % convert to seconds
         sc = readNPY(spikeClustersFile);
 
         %% Load alignment times
