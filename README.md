@@ -23,7 +23,9 @@ trials.laser_at_go_cue.npy (0 if no laser at go cue, 1 if laser ON)
 
 trials.laser_at_feedback.npy (0 if no laser at feedback time, 1 if laser ON)  
 
-spikes.times.npy (in seconds; sampling frequency 30 kHz)  
+trials.p.npy (fitted P variable from the PR model)
+
+spikes.times.npy (in seconds)  
 
 spikes.clusters.npy (cluster ID for every spike; only non-noise clusters)  
 
